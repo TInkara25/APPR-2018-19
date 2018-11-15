@@ -1,6 +1,7 @@
 # Analiza podatkov s programom R, 2018/19
 
-#Tinkara Žitko
+# Tinkara Žitko
+
 
 Repozitorij z gradivi pri predmetu APPR v študijskem letu 2018/19
 

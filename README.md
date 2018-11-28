@@ -1,7 +1,8 @@
 # Analiza podatkov s programom R, 2018/19
 
-# Tinkara Žitko
+# Analiza kriminalitete v Sloveniji
 
+Avtor: Tinkara Žitko
 
 Repozitorij z gradivi pri predmetu APPR v študijskem letu 2018/19
 
@@ -10,8 +11,26 @@ Repozitorij z gradivi pri predmetu APPR v študijskem letu 2018/19
 
 ## Tematika
 
-Izbrali si boste temo, s katero se bo vaš projekt ukvarjal.
-Tukaj boste napisali, kje ste dobili podatke, ter kakšen je vaš cilj.
+V svoji projektni nalogi bom analizirala kriminaliteto v Sloveniji. 
+
+Analizirala bom:
+* količino ovadenih, obtoženih in obsojenih fizičnih oseb
+* te količine primerjala po spolu in starosti
+* izobrazbo in status aktivnosti obtoženih 
+* količino obsojenih oseb glede na statistične regije Slovenije
+* trende obsodb skozi zadnjih 10 let
+
+Viri:
+* Tabela 1: Ovadene polnoletne osebe (https://pxweb.stat.si/pxweb/Dialog/varval.asp?ma=1360106s&ti=&path=../Database/Dem_soc/13_kriminaliteta/01_statistika_toz_sodisc/01_13601_ovadene_poln_osebe/&lang=2)
+* Tabela 2: Obtožene polnoletne osebe (https://pxweb.stat.si/pxweb/Dialog/varval.asp?ma=1360201s&ti=&path=../Database/Dem_soc/13_kriminaliteta/01_statistika_toz_sodisc/02_13602_obtozene_poln_osebe/&lang=2)
+* Tabela 3: Obsojene polnoletne osebe (https://pxweb.stat.si/pxweb/Dialog/varval.asp?ma=1360301S&ti=&path=../Database/Dem_soc/13_kriminaliteta/01_statistika_toz_sodisc/03_13603_obsojene_poln_osebe/&lang=2)
+* Tabela 4: Ovadene mladoletne osebe (https://pxweb.stat.si/pxweb/Dialog/varval.asp?ma=1360403s&ti=&path=../Database/Dem_soc/13_kriminaliteta/01_statistika_toz_sodisc/04_13604_ovadene_mlad_osebe/&lang=2)
+* Tabela 5: Obtožene mladoletne osebe (https://pxweb.stat.si/pxweb/Dialog/varval.asp?ma=1360501s&ti=&path=../Database/Dem_soc/13_kriminaliteta/01_statistika_toz_sodisc/05_13605_obtozene_mlad_osebe/&lang=2)
+* Tabela 6: Obsojene mladoletne osebe (https://pxweb.stat.si/pxweb/Dialog/varval.asp?ma=1360603s&ti=&path=../Database/Dem_soc/13_kriminaliteta/01_statistika_toz_sodisc/06_13606_obsojene_mlad_osebe/&lang=2)
+* Tabela 7: Obsojene polnoletne osebe glede na izobrazbo in status aktivnosti (https://pxweb.stat.si/pxweb/Dialog/varval.asp?ma=1360312S&ti=&path=../Database/Dem_soc/13_kriminaliteta/01_statistika_toz_sodisc/03_13603_obsojene_poln_osebe/&lang=2)
+* Tabela 8: Obsojeni polnoletni in mladoletni po statističnih regijah (https://pxweb.stat.si/pxweb/Dialog/varval.asp?ma=1372202s&ti=&path=../Database/Dem_soc/13_kriminaliteta/01_statistika_toz_sodisc/10_13722_obsojene_kazalniki/&lang=2)
+* Tabela 9: Polnoletni obsojenci (2006-2013) (https://pxweb.stat.si/pxweb/Dialog/varval.asp?ma=1360391S&ti=&path=../Database/Dem_soc/13_kriminaliteta/90_arhiv/03_13603_obsojene_poln_osebe/&lang=2)
+* Tabela 10: Mladoletni obsojenci (2006-2013) (https://pxweb.stat.si/pxweb/Dialog/varval.asp?ma=1360691S&ti=&path=../Database/Dem_soc/13_kriminaliteta/90_arhiv/06_13606_obsojene_mlad_osebe/&lang=2)
 
 ## Program
 

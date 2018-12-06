@@ -40,7 +40,7 @@ Viri:
 * https://pxweb.stat.si/pxweb/Dialog/varval.asp?ma=1360501s&ti=&path=../Database/Dem_soc/13_kriminaliteta/01_statistika_toz_sodisc/05_13605_obtozene_mlad_osebe/&lang=2
 * https://pxweb.stat.si/pxweb/Dialog/varval.asp?ma=1360603s&ti=&path=../Database/Dem_soc/13_kriminaliteta/01_statistika_toz_sodisc/06_13606_obsojene_mlad_osebe/&lang=2
 * https://pxweb.stat.si/pxweb/Dialog/varval.asp?ma=1360312S&ti=&path=../Database/Dem_soc/13_kriminaliteta/01_statistika_toz_sodisc/03_13603_obsojene_poln_osebe/&lang=2
-*https://pxweb.stat.si/pxweb/Dialog/varval.asp?ma=1372202s&ti=&path=../Database/Dem_soc/13_kriminaliteta/01_statistika_toz_sodisc/10_13722_obsojene_kazalniki/&lang=2
+* https://pxweb.stat.si/pxweb/Dialog/varval.asp?ma=1372202s&ti=&path=../Database/Dem_soc/13_kriminaliteta/01_statistika_toz_sodisc/10_13722_obsojene_kazalniki/&lang=2
 * https://pxweb.stat.si/pxweb/Dialog/varval.asp?ma=1360391S&ti=&path=../Database/Dem_soc/13_kriminaliteta/90_arhiv/03_13603_obsojene_poln_osebe/&lang=2
 * https://pxweb.stat.si/pxweb/Dialog/varval.asp?ma=1360691S&ti=&path=../Database/Dem_soc/13_kriminaliteta/90_arhiv/06_13606_obsojene_mlad_osebe/&lang=2
 

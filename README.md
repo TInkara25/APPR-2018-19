@@ -20,17 +20,29 @@ Analizirala bom:
 * količino obsojenih oseb glede na statistične regije Slovenije
 * trende obsodb skozi zadnjih 10 let
 
+Tabele:
+* Tabela 1: Ovadene polnoletne osebe - KAZNIVO DEJANJE, VRSTA ODLOČBE, SPOL, STAROST, LETO
+* Tabela 2: Obtožene polnoletne osebe - KAZNIVO DEJANJE, VRSTA ODLOČBE, SPOL, LETO
+* Tabela 3: Obsojene polnoletne osebe - KAZNIVO DEJANJE, GLAVNA KAZEN, SPOL, LETO
+* Tabela 4: Ovadene mladoletne osebe - KAZNIVO DEJANJE, STAROST, VRSTA ODLOČBE, SPOL, LETO
+* Tabela 5: Obtožene mladoletne osebe - KAZNIVO DEJANJE, VRSTA ODLOČBE, SPOL, LETO
+* Tabela 6: Obsojene mladoletne osebe - KAZNIVO DEJANJE, KAZENSKA SANKCIJA, SPOL, LETO
+* Tabela 7: Obsojene polnoletne osebe glede na izobrazbo in status aktivnosti - IZOBRAZBA, STATUS AKTIVNOSTI, LETO, KAZNIVO DEJANJE
+* Tabela 8: Obsojeni polnoletni in mladoletni po statističnih regijah - STATISTIČNA REGIJA, KAZALNIK, LETO
+* Tabela 9: Polnoletni obsojenci (2006-2013) - KAZNIVO DEJANJE, GLAVNA KAZEN, SPOL, LETO
+* Tabela 10: Mladoletni obsojenci (2006-2013) - KAZNIVO DEJANJE, ŠTEVILO OSEB, SPOL, LETO
+
 Viri:
-* Tabela 1: Ovadene polnoletne osebe (https://pxweb.stat.si/pxweb/Dialog/varval.asp?ma=1360106s&ti=&path=../Database/Dem_soc/13_kriminaliteta/01_statistika_toz_sodisc/01_13601_ovadene_poln_osebe/&lang=2)
-* Tabela 2: Obtožene polnoletne osebe (https://pxweb.stat.si/pxweb/Dialog/varval.asp?ma=1360201s&ti=&path=../Database/Dem_soc/13_kriminaliteta/01_statistika_toz_sodisc/02_13602_obtozene_poln_osebe/&lang=2)
-* Tabela 3: Obsojene polnoletne osebe (https://pxweb.stat.si/pxweb/Dialog/varval.asp?ma=1360301S&ti=&path=../Database/Dem_soc/13_kriminaliteta/01_statistika_toz_sodisc/03_13603_obsojene_poln_osebe/&lang=2)
-* Tabela 4: Ovadene mladoletne osebe (https://pxweb.stat.si/pxweb/Dialog/varval.asp?ma=1360403s&ti=&path=../Database/Dem_soc/13_kriminaliteta/01_statistika_toz_sodisc/04_13604_ovadene_mlad_osebe/&lang=2)
-* Tabela 5: Obtožene mladoletne osebe (https://pxweb.stat.si/pxweb/Dialog/varval.asp?ma=1360501s&ti=&path=../Database/Dem_soc/13_kriminaliteta/01_statistika_toz_sodisc/05_13605_obtozene_mlad_osebe/&lang=2)
-* Tabela 6: Obsojene mladoletne osebe (https://pxweb.stat.si/pxweb/Dialog/varval.asp?ma=1360603s&ti=&path=../Database/Dem_soc/13_kriminaliteta/01_statistika_toz_sodisc/06_13606_obsojene_mlad_osebe/&lang=2)
-* Tabela 7: Obsojene polnoletne osebe glede na izobrazbo in status aktivnosti (https://pxweb.stat.si/pxweb/Dialog/varval.asp?ma=1360312S&ti=&path=../Database/Dem_soc/13_kriminaliteta/01_statistika_toz_sodisc/03_13603_obsojene_poln_osebe/&lang=2)
-* Tabela 8: Obsojeni polnoletni in mladoletni po statističnih regijah (https://pxweb.stat.si/pxweb/Dialog/varval.asp?ma=1372202s&ti=&path=../Database/Dem_soc/13_kriminaliteta/01_statistika_toz_sodisc/10_13722_obsojene_kazalniki/&lang=2)
-* Tabela 9: Polnoletni obsojenci (2006-2013) (https://pxweb.stat.si/pxweb/Dialog/varval.asp?ma=1360391S&ti=&path=../Database/Dem_soc/13_kriminaliteta/90_arhiv/03_13603_obsojene_poln_osebe/&lang=2)
-* Tabela 10: Mladoletni obsojenci (2006-2013) (https://pxweb.stat.si/pxweb/Dialog/varval.asp?ma=1360691S&ti=&path=../Database/Dem_soc/13_kriminaliteta/90_arhiv/06_13606_obsojene_mlad_osebe/&lang=2)
+* https://pxweb.stat.si/pxweb/Dialog/varval.asp?ma=1360106s&ti=&path=../Database/Dem_soc/13_kriminaliteta/01_statistika_toz_sodisc/01_13601_ovadene_poln_osebe/&lang=2
+* https://pxweb.stat.si/pxweb/Dialog/varval.asp?ma=1360201s&ti=&path=../Database/Dem_soc/13_kriminaliteta/01_statistika_toz_sodisc/02_13602_obtozene_poln_osebe/&lang=2
+* https://pxweb.stat.si/pxweb/Dialog/varval.asp?ma=1360301S&ti=&path=../Database/Dem_soc/13_kriminaliteta/01_statistika_toz_sodisc/03_13603_obsojene_poln_osebe/&lang=2
+* https://pxweb.stat.si/pxweb/Dialog/varval.asp?ma=1360403s&ti=&path=../Database/Dem_soc/13_kriminaliteta/01_statistika_toz_sodisc/04_13604_ovadene_mlad_osebe/&lang=2
+* https://pxweb.stat.si/pxweb/Dialog/varval.asp?ma=1360501s&ti=&path=../Database/Dem_soc/13_kriminaliteta/01_statistika_toz_sodisc/05_13605_obtozene_mlad_osebe/&lang=2
+* https://pxweb.stat.si/pxweb/Dialog/varval.asp?ma=1360603s&ti=&path=../Database/Dem_soc/13_kriminaliteta/01_statistika_toz_sodisc/06_13606_obsojene_mlad_osebe/&lang=2
+* https://pxweb.stat.si/pxweb/Dialog/varval.asp?ma=1360312S&ti=&path=../Database/Dem_soc/13_kriminaliteta/01_statistika_toz_sodisc/03_13603_obsojene_poln_osebe/&lang=2
+*https://pxweb.stat.si/pxweb/Dialog/varval.asp?ma=1372202s&ti=&path=../Database/Dem_soc/13_kriminaliteta/01_statistika_toz_sodisc/10_13722_obsojene_kazalniki/&lang=2
+* https://pxweb.stat.si/pxweb/Dialog/varval.asp?ma=1360391S&ti=&path=../Database/Dem_soc/13_kriminaliteta/90_arhiv/03_13603_obsojene_poln_osebe/&lang=2
+* https://pxweb.stat.si/pxweb/Dialog/varval.asp?ma=1360691S&ti=&path=../Database/Dem_soc/13_kriminaliteta/90_arhiv/06_13606_obsojene_mlad_osebe/&lang=2
 
 ## Program
 

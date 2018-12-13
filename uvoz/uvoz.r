@@ -52,3 +52,14 @@ druzine <- uvozi.druzine(levels(obcine$obcina))
 # datoteko, tukaj pa bi klicali tiste, ki jih potrebujemo v
 # 2. fazi. Seveda bi morali ustrezno datoteko uvoziti v prihodnjih
 # fazah.
+
+Tabela_1 <- read_csv2("podatki/Tabela 1.csv")
+View(Tabela_1)
+Tabela_2 <- read_csv2("podatki/Tabela 2.csv")
+View(Tabela_2)
+Tabela_3 <- read_csv2("podatki/Tabela 3.csv")
+View(Tabela_3)
+Tabela_4 <- read_csv2("podatki/Tabela 4.csv")
+View(Tabela_4)
+Tabela_5 <- read_csv2("podatki/Tabela 5.csv")
+View(Tabela_5)

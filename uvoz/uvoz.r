@@ -63,3 +63,8 @@ Tabela_4 <- read_csv2("podatki/Tabela 4.csv")
 View(Tabela_4)
 Tabela_5 <- read_csv2("podatki/Tabela 5.csv")
 View(Tabela_5)
+Tabela_8_REGIJE <- read_csv2("podatki/Tabela 8-REGIJE.csv", locale=locale(encoding="Windows-1250"), skip = 4)
+View(Tabela_8_REGIJE)
+analiza6 <- Tabela_8_REGIJE
+Tabela_7_IZOBRAZBA_AKTIVNOST <- read_csv2("podatki/Tabela 7-IZOBRAZBA, AKTIVNOST.csv", locale=locale(encoding="Windows-1250"), skip = 4)
+View(Tabela_7_IZOBRAZBA_AKTIVNOST)

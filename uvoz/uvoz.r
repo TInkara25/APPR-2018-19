@@ -53,43 +53,43 @@ druzine <- uvozi.druzine(levels(obcine$obcina))
 # 2. fazi. Seveda bi morali ustrezno datoteko uvoziti v prihodnjih
 # fazah.
 
-Tabela_1_OVADBE_SPOL_POLNOLETNI <- read_csv2("podatki/Tabela 1-OVADBE,SPOL,POLNOLETNI.csv", locale=locale(encoding="Windows-1250"), skip = 6)
+Tabela_1_OVADBE_SPOL_POLNOLETNI <- read.csv2("podatki/Tabela 1-OVADBE,SPOL,POLNOLETNI.csv", locale=locale(encoding="Windows-1250"), skip = 6)
 View(Tabela_1_OVADBE_SPOL_POLNOLETNI)
 
-Tabela_1.1_OVADBE_SPOL_POLNOLETNI <- read_csv2("podatki/Tabela 1-OVADBE,SPOL,POLNOLETNI.csv", locale=locale(encoding="Windows-1250"), skip = 7, n_max = 7)
+Tabela_1.1_OVADBE_SPOL_POLNOLETNI <- read.csv2("podatki/Tabela 1-OVADBE,SPOL,POLNOLETNI.csv", locale=locale(encoding="Windows-1250"), skip = 7, n_max = 7)
 View(Tabela_1.1_OVADBE_SPOL_POLNOLETNI)
 
 Tabela_1.2_OVADBE_moski_POLNOLETNI <- read.csv2("podatki/Tabela 1-OVADBE,SPOL,POLNOLETNI.csv", locale=locale(encoding="Windows-1250"), skip = 17, n_max = 7)
 View(Tabela_1.2_OVADBE_SPOL_POLNOLETNI)
 
-Tabela_1.3_OVADBE_zenske_POLNOLETNI <- read_csv2("podatki/Tabela 1-OVADBE,SPOL,POLNOLETNI.csv", locale=locale(encoding="Windows-1250"), skip = 27, n_max = 7)
+Tabela_1.3_OVADBE_zenske_POLNOLETNI <- read.csv2("podatki/Tabela 1-OVADBE,SPOL,POLNOLETNI.csv", locale=locale(encoding="Windows-1250"), skip = 27, n_max = 7)
 View(Tabela_1.3_OVADBE_SPOL_POLNOLETNI)
 
-Tabela_2_OBTOZBE_SPOL_POLNOLETNI <- read_csv2("podatki/Tabela 2-OBTOZBE,SPOL,POLNOLETNI.csv", locale=locale(encoding="Windows-1250"), skip = 4)
+Tabela_2_OBTOZBE_SPOL_POLNOLETNI <- read.csv2("podatki/Tabela 2-OBTOZBE,SPOL,POLNOLETNI.csv", locale=locale(encoding="Windows-1250"), skip = 4)
 View(Tabela_2_OBTOZBE_SPOL_POLNOLETNI)
 
-Tabela_3_OBSODBE_SPOL_POLNOLETNI <- read_csv2("podatki/Tabela 3-OBSODBE,SPOL,POLNOLETNI.csv", locale=locale(encoding="Windows-1250"), skip = 4)
+Tabela_3_OBSODBE_SPOL_POLNOLETNI <- read.csv2("podatki/Tabela 3-OBSODBE,SPOL,POLNOLETNI.csv", locale=locale(encoding="Windows-1250"), skip = 4)
 View(Tabela_3_OBSODBE_SPOL_POLNOLETNI)
 
-Tabela_4_OVADBE_SPOL_MLADOLETNI <- read_csv2("podatki/Tabela 4-OVADBE,SPOL,MLADOLETNI.csv", locale=locale(encoding="Windows-1250"), skip = 6, n_max = 8)
+Tabela_4_OVADBE_SPOL_MLADOLETNI <- read.csv2("podatki/Tabela 4-OVADBE,SPOL,MLADOLETNI.csv", locale=locale(encoding="Windows-1250"), skip = 6, n_max = 8)
 View(Tabela_4_OVADBE_SPOL_MLADOLETNI)
 
-Tabela_5_OBTOZBE_SPOL_MLADOLETNI <- read_csv2("podatki/Tabela 5-OBTOZBE,SPOL,MLADOLETNI.csv", locale=locale(encoding="Windows-1250"), skip = 4)
+Tabela_5_OBTOZBE_SPOL_MLADOLETNI <- read.csv2("podatki/Tabela 5-OBTOZBE,SPOL,MLADOLETNI.csv", locale=locale(encoding="Windows-1250"), skip = 4)
 View(Tabela_5_OBTOZBE_SPOL_MLADOLETNI)
 
-Tabela_6_OBSODBE_SPOL_MLADOLETNI <- read_csv2("podatki/Tabela 6-OBSODBE,SPOL,MLADOLETNI.csv", locale=locale(encoding="Windows-1250"), skip = 4)
+Tabela_6_OBSODBE_SPOL_MLADOLETNI <- read.csv2("podatki/Tabela 6-OBSODBE,SPOL,MLADOLETNI.csv", locale=locale(encoding="Windows-1250"), skip = 4)
 View(Tabela_6_OBSODBE_SPOL_MLADOLETNI)
 
-Tabela_7_IZOBRAZBA_AKTIVNOST <- read_csv2("podatki/Tabela 7-IZOBRAZBA, AKTIVNOST.csv", locale=locale(encoding="Windows-1250"), skip = 4)
+Tabela_7_IZOBRAZBA_AKTIVNOST <- read.csv2("podatki/Tabela 7-IZOBRAZBA, AKTIVNOST.csv", locale=locale(encoding="Windows-1250"), skip = 4)
 View(Tabela_7_IZOBRAZBA_AKTIVNOST)
 
 Tabela_8_REGIJE <- read.csv2("podatki/Tabela 8-REGIJE.csv", locale=locale(encoding="Windows-1250"), skip = 4)
 View(Tabela_8_REGIJE)
 
-Tabela_9_OBSODBE_SPOL_POLNOLETNI_ARHIV <- read_csv2("podatki/Tabela 9-OBSODBE,SPOL,POLNOLETNI,ARHIV.csv", locale=locale(encoding="Windows-1250"), skip = 5)
+Tabela_9_OBSODBE_SPOL_POLNOLETNI_ARHIV <- read.csv2("podatki/Tabela 9-OBSODBE,SPOL,POLNOLETNI,ARHIV.csv", locale=locale(encoding="Windows-1250"), skip = 5)
 View(Tabela_9_OBSODBE_SPOL_POLNOLETNI_ARHIV)
 
-Tabela_10_OBSODBE_SPOL_MLADOLETNI_ARHIV <- read_csv2("podatki/Tabela 10-OBSODBE,SPOL,MLADOLETNI,ARHIV.csv", locale=locale(encoding="Windows-1250"), skip = 4)
+Tabela_10_OBSODBE_SPOL_MLADOLETNI_ARHIV <- read.csv2("podatki/Tabela 10-OBSODBE,SPOL,MLADOLETNI,ARHIV.csv", locale=locale(encoding="Windows-1250"), skip = 4)
 View(Tabela_10_OBSODBE_SPOL_MLADOLETNI_ARHIV)
 
 library(dplyr)
@@ -107,12 +107,16 @@ Tabela_1.2_OVADBE_moski_POLNOLETNI$spol <- c("moški")
 View(Tabela_1.2_OVADBE_moski_POLNOLETNI)
 
 #Tabela 2
+Tabela.2 <- Tabela_7_IZOBRAZBA_AKTIVNOST %>% melt(id.variable = "status aktivnosti", variable.name = "stopnja izobrazbe", value.name = "kolicina")
+View(Tabela.2)
 
 #Tabela 3
-Tabela.3 <- Tabela_8_REGIJE 
+Tabela.3 <- Tabela_8_REGIJE %>% melt(variable.name = "leta")
 View(Tabela.3)
 #Tabela 4
 
+#drop.cols <- c('Sepal.Length', 'Sepal.Width')
+#iris %>% select(-drop.cols)
 
 
 

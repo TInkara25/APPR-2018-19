@@ -109,7 +109,7 @@ View(Tabela_1.2_OVADBE_moski_POLNOLETNI)
 #Tabela 2
 
 #Tabela 3
-Tabela.3 <- Tabela_8_REGIJE %>% melt(id.variable = "X1", value.name = "leto", value.name = "kolicina")
+Tabela.3 <- Tabela_8_REGIJE 
 View(Tabela.3)
 #Tabela 4
 

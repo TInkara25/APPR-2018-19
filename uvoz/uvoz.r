@@ -59,7 +59,7 @@ View(Tabela_1_OVADBE_SPOL_POLNOLETNI)
 Tabela_1.1_OVADBE_SPOL_POLNOLETNI <- read_csv2("podatki/Tabela 1-OVADBE,SPOL,POLNOLETNI.csv", locale=locale(encoding="Windows-1250"), skip = 7, n_max = 7)
 View(Tabela_1.1_OVADBE_SPOL_POLNOLETNI)
 
-Tabela_1.2_OVADBE_moski_POLNOLETNI <- read_csv2("podatki/Tabela 1-OVADBE,SPOL,POLNOLETNI.csv", locale=locale(encoding="Windows-1250"), skip = 17, n_max = 7)
+Tabela_1.2_OVADBE_moski_POLNOLETNI <- read.csv2("podatki/Tabela 1-OVADBE,SPOL,POLNOLETNI.csv", locale=locale(encoding="Windows-1250"), skip = 17, n_max = 7)
 View(Tabela_1.2_OVADBE_SPOL_POLNOLETNI)
 
 Tabela_1.3_OVADBE_zenske_POLNOLETNI <- read_csv2("podatki/Tabela 1-OVADBE,SPOL,POLNOLETNI.csv", locale=locale(encoding="Windows-1250"), skip = 27, n_max = 7)
@@ -93,7 +93,31 @@ Tabela_10_OBSODBE_SPOL_MLADOLETNI_ARHIV <- read_csv2("podatki/Tabela 10-OBSODBE,
 View(Tabela_10_OBSODBE_SPOL_MLADOLETNI_ARHIV)
 
 library(dplyr)
-#Analiza 1
+library(rgdal)
+library(rgeos)
+library(mosaic)
+library(maptools)
+library(reshape2)
+
+
+#Ciscenje
+#Tabela 1
+Tabela_1.2_OVADBE_moski_POLNOLETNI
+Tabela_1.2_OVADBE_moski_POLNOLETNI$spol <- c("moški")
+View(Tabela_1.2_OVADBE_moski_POLNOLETNI)
+
+#Tabela 2
+
+#Tabela 3
+Tabela.3 <- Tabela_8_REGIJE %>% melt(id.variable = "X1", value.name = "leto", value.name = "kolicina")
+View(Tabela.3)
+#Tabela 4
+
+
+
+
+
+
 
 
 

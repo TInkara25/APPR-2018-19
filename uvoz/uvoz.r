@@ -1,58 +1,5 @@
 # 2. faza: Uvoz podatkov
 
-# sl <- locale("sl", decimal_mark=",", grouping_mark=".")
-# 
-# # Funkcija, ki uvozi občine iz Wikipedije
-# uvozi.obcine <- function() {
-#   link <- "http://sl.wikipedia.org/wiki/Seznam_ob%C4%8Din_v_Sloveniji"
-#   stran <- html_session(link) %>% read_html()
-#   tabela <- stran %>% html_nodes(xpath="//table[@class='wikitable sortable']") %>%
-#     .[[1]] %>% html_table(dec=",")
-#   for (i in 1:ncol(tabela)) {
-#     if (is.character(tabela[[i]])) {
-#       Encoding(tabela[[i]]) <- "UTF-8"
-#     }
-#   }
-#   colnames(tabela) <- c("obcina", "povrsina", "prebivalci", "gostota", "naselja",
-#                         "ustanovitev", "pokrajina", "regija", "odcepitev")
-#   tabela$obcina <- gsub("Slovenskih", "Slov.", tabela$obcina)
-#   tabela$obcina[tabela$obcina == "Kanal ob Soči"] <- "Kanal"
-#   tabela$obcina[tabela$obcina == "Loški potok"] <- "Loški Potok"
-#   for (col in c("povrsina", "prebivalci", "gostota", "naselja", "ustanovitev")) {
-#     tabela[[col]] <- parse_number(tabela[[col]], na="-", locale=sl)
-#   }
-#   for (col in c("obcina", "pokrajina", "regija")) {
-#     tabela[[col]] <- factor(tabela[[col]])
-#   }
-#   return(tabela)
-# }
-# 
-# # Funkcija, ki uvozi podatke iz datoteke druzine.csv
-# uvozi.druzine <- function(obcine) {
-#   data <- read_csv2("podatki/druzine.csv", col_names=c("obcina", 1:4),
-#                     locale=locale(encoding="Windows-1250"))
-#   data$obcina <- data$obcina %>% strapplyc("^([^/]*)") %>% unlist() %>%
-#     strapplyc("([^ ]+)") %>% sapply(paste, collapse=" ") %>% unlist()
-#   data$obcina[data$obcina == "Sveti Jurij"] <- "Sveti Jurij ob Ščavnici"
-#   data <- data %>% melt(id.vars="obcina", variable.name="velikost.druzine",
-#                         value.name="stevilo.druzin")
-#   data$velikost.druzine <- parse_number(data$velikost.druzine)
-#   data$obcina <- factor(data$obcina, levels=obcine)
-#   return(data)
-# }
-# 
-# # Zapišimo podatke v razpredelnico obcine
-# obcine <- uvozi.obcine()
-# 
-# # Zapišimo podatke v razpredelnico druzine.
-# druzine <- uvozi.druzine(levels(obcine$obcina))
-# 
-# # Če bi imeli več funkcij za uvoz in nekaterih npr. še ne bi
-# # potrebovali v 3. fazi, bi bilo smiselno funkcije dati v svojo
-# # datoteko, tukaj pa bi klicali tiste, ki jih potrebujemo v
-# # 2. fazi. Seveda bi morali ustrezno datoteko uvoziti v prihodnjih
-# # fazah.
-
 #Uvoz
 
 library(dplyr)
@@ -102,7 +49,7 @@ Tabela_10_OBSODBE_SPOL_MLADOLETNI_ARHIV <- read_csv2("podatki/Tabela 10-OBSODBE,
 #View(Tabela_10_OBSODBE_SPOL_MLADOLETNI_ARHIV)
 
 
-#Urejanje
+#ČIŠČENJE
 #Tabela 1
 
 Tabela_1.2_OVADBE_moski_POLNOLETNI$spol <- c("moški")
@@ -177,6 +124,11 @@ Tabela_10_OBSODBE_SPOL_MLADOLETNI_ARHIV$vrsta <- c("obsodbe")
 Tabela_10_OBSODBE_SPOL_MLADOLETNI_ARHIV$starost <- c("mladoletni")
 Tabela.1 <- rbind(Tabela.1, Tabela_10_OBSODBE_SPOL_MLADOLETNI_ARHIV)
 
+Tabela.1 <- filter(Tabela.1, starost != "Starost - SKUPAJ")
+Tabela.1 <- filter(Tabela.1, spol != "Spol - SKUPAJ")
+Tabela.1$spol <- gsub("Moški", "moški", Tabela.1$spol)
+Tabela.1$spol <- gsub("Ženske", "ženski", Tabela.1$spol)
+Tabela.1$starost <- gsub("do 20 let", "od 19 do 20 let", Tabela.1$starost)
 
 View(Tabela.1)
 
@@ -190,12 +142,3 @@ View(Tabela.2)
 Tabela.3 <- Tabela_8_REGIJE %>% melt(id.variable = "X1", variable.name = "leto", value.name = "kolicina")
 colnames(Tabela.3)[1] <- c("regija")
 View(Tabela.3)
-
-#Čiščenje
-
-#Tabela 1
-Tabela.1 <- filter(Tabela.1, starost != "Starost - SKUPAJ")
-Tabela.1 <- filter(Tabela.1, spol != "Spol - SKUPAJ")
-Tabela.1$spol <- gsub("Moški", "moški", Tabela.1$spol)
-Tabela.1$spol <- gsub("Ženske", "ženski", Tabela.1$spol)
-Tabela.1$starost <- gsub("do 20 let", "od 19 do 20 let", Tabela.1$starost)
